@@ -2,6 +2,9 @@
 
 express-node
 
+1. "express": "~4.16.1",
+2. node
+
 ## [Express](https://expressjs.com/)
 
 高度包容、快速而极简的Node.js Web框架
@@ -18,6 +21,11 @@ npm install express --save
 
 - 使用vscode 下载REST Client
 - [加密，解密](https://github.com/travist/jsencrypt)
+- 插件nodemon - npm install nodemon
+
+```js
+"start": "node ./bin/www" -> "start": "nodemon ./bin/www"
+```
 
 使用 npm init 命令为应用程序创建 package.json 文件。
 
