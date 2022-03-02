@@ -25,6 +25,7 @@ npm install express --save
 - [在 Express 中提供静态文件](./doc/static-files.md)
 - [路由列表](./doc/route-separation.md)
 - [路由图](./doc/route-map.md)
+- [检查数据库](./doc/data.md)
 
 ## 常见问题及解答
 
