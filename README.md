@@ -22,6 +22,15 @@ npm install express --save
 - [hello world](./doc/hello.md)
 - [Express 应用程序生成器](./doc/express-generator.md)
 - [基本路由](./doc/basic-routing.md)
+- [在 Express 中提供静态文件](./doc/static-files.md)
+
+## 常见问题及解答
+
+## Q1:如何呈现纯 HTML？
+
+您不必这么做！无需使用 res.render() 函数来“呈现”HTML。 如果您具有特定文件，请使用 res.sendFile() 函数。 如果您希望从目录提供许多资产，请使用 express.static() 中间件函数。
+
+
 
 ## 勘误及提问
 
