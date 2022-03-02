@@ -16,6 +16,9 @@ npm install express --save
 > set DEBUG=myapp:* & npm start
 ```
 
+- 使用vscode 下载REST Client
+- [加密，解密](https://github.com/travist/jsencrypt)
+
 使用 npm init 命令为应用程序创建 package.json 文件。
 
 - [安装](./install.md)
@@ -27,6 +30,12 @@ npm install express --save
 - [路由图](./doc/route-map.md)
 - [检查数据库](./doc/data.md)
 - [路由](./doc/routing.md)
+- [编写中间件](./doc/writing.md)
+- [使用中间件](./doc/using.md)
+- [使用模板引擎](./doc/using-template-engines.md)
+- [错误处理](./doc/error-handing.md)
+- [调试](./doc/debugging.md)
+- [数据库](./doc/database.md)
 
 ## 常见问题及解答
 
