@@ -10,11 +10,18 @@ express-node
 npm install express --save
 ```
 
+在 Windows 命令提示符上，使用以下命令：
+
+```js
+> set DEBUG=myapp:* & npm start
+```
+
 使用 npm init 命令为应用程序创建 package.json 文件。
 
 - [安装](./install.md)
 - [hello world](./doc/hello.md)
 - [Express 应用程序生成器](./doc/express-generator.md)
+- [基本路由](./doc/basic-routing.md)
 
 ## 勘误及提问
 
