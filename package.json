@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/webVueBlog/express-node#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-generator": "^4.16.1"
   }
 }

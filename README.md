@@ -14,6 +14,7 @@ npm install express --save
 
 - [安装](./install.md)
 - [hello world](./doc/hello.md)
+- [Express 应用程序生成器](./doc/express-generator.md)
 
 ## 勘误及提问
 
