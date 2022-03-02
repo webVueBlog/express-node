@@ -13,6 +13,7 @@ npm install express --save
 使用 npm init 命令为应用程序创建 package.json 文件。
 
 - [安装](./install.md)
+- [hello world](./doc/hello.md)
 
 ## 勘误及提问
 
