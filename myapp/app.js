@@ -7,23 +7,28 @@ var http = require('http');
 var bodyParser = require('body-parser');
 var util = require('util');
 var fs = require("fs");
-var multer  = require('multer');
+var multer = require('multer');
+var url = require('url');
 
 //添加的新用户数据
 var user = {
-   "user4" : {
-      "name" : "mohit",
-      "password" : "password4",
-      "profession" : "teacher",
-      "id": 4
-   }
+	"user4": {
+		"name": "mohit",
+		"password": "password4",
+		"profession": "teacher",
+		"id": 4
+	}
 }
 
 var app = express();
 
 // 创建 application/x-www-form-urlencoded 编码解析
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
-app.use(multer({ dest: '/tmp/'}).array('image'));
+var urlencodedParser = bodyParser.urlencoded({
+	extended: false
+})
+app.use(multer({
+	dest: '/tmp/'
+}).array('image'));
 
 var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
@@ -65,10 +70,14 @@ app.use((req, res, next) => {
 //    res.send('Hello GET' + cookies);
 // })
 
-app.get('/', function (req, res) {
-   // http://localhost:3000/static/index.html
-   // res.sendFile( __dirname + "/" + "index.html" );
-   res.sendFile( __dirname + "/" + "public/static/index.html" );
+app.get('/', function(req, res) {
+	// 解析请求，包括文件名
+	var pathname = url.parse(req.url).pathname;
+	// 输出请求的文件名
+	console.log("Request for " + pathname + " received.");
+	// http://localhost:3000/static/index.html
+	// res.sendFile( __dirname + "/" + "index.html" );
+	res.sendFile(__dirname + "/" + "public/static/index.html");
 })
 
 var id = 2;
@@ -76,56 +85,56 @@ var id = 2;
 //    fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
 //        data = JSON.parse( data );
 //        delete data["user" + id];
-       
+
 //        console.log( data );
 //        res.end( JSON.stringify(data));
 //    });
 // })
 
-app.get('/deleteUser', function (req, res) {
-   // 读取已存在的数据
-   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
-       data = JSON.parse( data );
-       delete data["user" + id];
-       console.log( data );
-	   var des_file = __dirname + "/" + "json/users.json"
-	   fs.writeFile(des_file, JSON.stringify(data), function (err) {
-	     if( err ){
-	          console.log( err );
-	     }else{
-	          res.end( JSON.stringify(data));
-	      }
-	   });
-	   
-   });
+app.get('/deleteUser', function(req, res) {
+	// 读取已存在的数据
+	fs.readFile(__dirname + "/" + "json/users.json", 'utf8', function(err, data) {
+		data = JSON.parse(data);
+		delete data["user" + id];
+		console.log(data);
+		var des_file = __dirname + "/" + "json/users.json"
+		fs.writeFile(des_file, JSON.stringify(data), function(err) {
+			if (err) {
+				console.log(err);
+			} else {
+				res.end(JSON.stringify(data));
+			}
+		});
+
+	});
 })
 
-app.get('/listUsers/:id', function (req, res) {
-   // 首先我们读取已存在的用户
-   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
-       data = JSON.parse( data );
-       var user = data["user" + req.params.id] 
-       console.log( user );
-       res.end( JSON.stringify(user));
-   });
+app.get('/listUsers/:id', function(req, res) {
+	// 首先我们读取已存在的用户
+	fs.readFile(__dirname + "/" + "json/users.json", 'utf8', function(err, data) {
+		data = JSON.parse(data);
+		var user = data["user" + req.params.id]
+		console.log(user);
+		res.end(JSON.stringify(user));
+	});
 })
 
-app.get('/addUser', function (req, res) {
-   // 读取已存在的数据
-   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
-       data = JSON.parse( data );
-       data["user4"] = user["user4"];
-       console.log( data );
-	   var des_file = __dirname + "/" + "json/users.json"
-	   fs.writeFile(des_file, JSON.stringify(data), function (err) {
-	     if( err ){
-	          console.log( err );
-	     }else{
-	          res.end( JSON.stringify(data));
-	      }
-	   });
-	   
-   });
+app.get('/addUser', function(req, res) {
+	// 读取已存在的数据
+	fs.readFile(__dirname + "/" + "json/users.json", 'utf8', function(err, data) {
+		data = JSON.parse(data);
+		data["user4"] = user["user4"];
+		console.log(data);
+		var des_file = __dirname + "/" + "json/users.json"
+		fs.writeFile(des_file, JSON.stringify(data), function(err) {
+			if (err) {
+				console.log(err);
+			} else {
+				res.end(JSON.stringify(data));
+			}
+		});
+
+	});
 })
 
 // app.get('/addUser', function (req, res) {
@@ -138,55 +147,55 @@ app.get('/addUser', function (req, res) {
 //    });
 // })
 
-app.get('/listUsers', function (req, res) {
-   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
-       console.log( data );
-       res.end( data );
-   });
+app.get('/listUsers', function(req, res) {
+	fs.readFile(__dirname + "/" + "json/users.json", 'utf8', function(err, data) {
+		console.log(data);
+		res.end(data);
+	});
 })
 
-app.post('/file_upload', function (req, res) {
- 
-   console.log(req.files[0]);  // 上传的文件信息
- 
-   var des_file = __dirname + "/" + req.files[0].originalname;
-   fs.readFile( req.files[0].path, function (err, data) {
-        fs.writeFile(des_file, data, function (err) {
-         if( err ){
-              console.log( err );
-         }else{
-               response = {
-                   message:'File uploaded successfully', 
-                   filename:req.files[0].originalname
-              };
-          }
-          console.log( response );
-          res.end( JSON.stringify( response ) );
-       });
-   });
-})
- 
+app.post('/file_upload', function(req, res) {
 
-app.get('/process_get', function (req, res) {
-   // 输出 JSON 格式
-   var response = {
-       "first_name":req.query.first_name,
-       "last_name":req.query.last_name
-   };
-   console.log(response);
-   res.end(JSON.stringify(response));
+	console.log(req.files[0]); // 上传的文件信息
+
+	var des_file = __dirname + "/" + req.files[0].originalname;
+	fs.readFile(req.files[0].path, function(err, data) {
+		fs.writeFile(des_file, data, function(err) {
+			if (err) {
+				console.log(err);
+			} else {
+				response = {
+					message: 'File uploaded successfully',
+					filename: req.files[0].originalname
+				};
+			}
+			console.log(response);
+			res.end(JSON.stringify(response));
+		});
+	});
 })
 
-app.post('/process_post', urlencodedParser, function (req, res) {
-   // 输出 JSON 格式
-   var response = {
-       "first_name":req.body.first_name,
-       "last_name":req.body.last_name
-   };
-   console.log(response);
-   res.end(JSON.stringify(response));
+
+app.get('/process_get', function(req, res) {
+	// 输出 JSON 格式
+	var response = {
+		"first_name": req.query.first_name,
+		"last_name": req.query.last_name
+	};
+	console.log(response);
+	res.end(JSON.stringify(response));
 })
- 
+
+app.post('/process_post', urlencodedParser, function(req, res) {
+	// 输出 JSON 格式
+	var response = {
+		"first_name": req.body.first_name,
+		"last_name": req.body.last_name
+	};
+	console.log(response);
+	res.end(JSON.stringify(response));
+})
+
 //  POST 请求
 // app.post('/', function (req, res) {
 //    console.log("主页 POST 请求");
