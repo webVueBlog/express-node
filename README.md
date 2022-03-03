@@ -69,6 +69,10 @@ express-node
 - [Node.js Express 框架](./doc/nodejs-express-framework.md)
 - [Node.js RESTful API](./doc/nodejs-restful-api.md)
 - [Node.js Web 模块](./doc/nodejs-web-module.md)
+- [Node.js 全局对象](./doc/nodejs-global-object.md)
+- [Node.js 常用工具](./doc/nodejs-util.md)
+- [Node.js 文件系统](./doc/nodejs-fs.md)
+- [Node.js 多进程](./doc/nodejs-process.md)
 
 ## 常见问题及解答
 
