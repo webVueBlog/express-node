@@ -29,6 +29,8 @@ npm install express --save
 
 使用 npm init 命令为应用程序创建 package.json 文件。
 
+## 阶段一
+
 - [安装](./install.md)
 - [hello world](./doc/hello.md)
 - [Express 应用程序生成器](./doc/express-generator.md)
@@ -44,6 +46,13 @@ npm install express --save
 - [错误处理](./doc/error-handing.md)
 - [调试](./doc/debugging.md)
 - [数据库](./doc/database.md)
+
+## 阶段二
+
+- [Node.js 连接 MySQL](./doc/nodejs-mysql.md)
+- [Node.js 回调函数](./doc/nodejs-callback.md)
+- [Node.js 事件循环](./doc/nodejs-event-loop.md)
+- [Node.js EventEmitter]()
 
 ## 常见问题及解答
 
