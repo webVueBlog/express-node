@@ -52,7 +52,7 @@ npm install express --save
 - [Node.js 连接 MySQL](./doc/nodejs-mysql.md)
 - [Node.js 回调函数](./doc/nodejs-callback.md)
 - [Node.js 事件循环](./doc/nodejs-event-loop.md)
-- [Node.js EventEmitter]()
+- [Node.js EventEmitter](./doc/nodejs-event.md)
 
 ## 常见问题及解答
 
