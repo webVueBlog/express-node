@@ -53,6 +53,8 @@ npm install express --save
 - [Node.js 回调函数](./doc/nodejs-callback.md)
 - [Node.js 事件循环](./doc/nodejs-event-loop.md)
 - [Node.js EventEmitter](./doc/nodejs-event.md)
+- [Node.js 函数](./doc/nodejs-function.md)
+- [Node.js 路由](./doc/nodejs-router.md)
 
 ## 常见问题及解答
 
