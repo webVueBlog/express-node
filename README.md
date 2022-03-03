@@ -4,14 +4,23 @@ express-node
 
 1. "express": "~4.16.1",
 2. node
+3. "cookie-parser": "~1.4.4",
+4. "body-parser": "^1.18.3",
+5. "multer": "^1.4.4",
 
 ## [Express](https://expressjs.com/)
 
 高度包容、快速而极简的Node.js Web框架
 
-```js
-npm install express --save
-```
+- body-parser 
+	- node.js 中间件
+	- 用于处理 JSON, Raw, Text 和 URL 编码的数据。
+- cookie-parser 
+	- 这就是一个解析Cookie的工具。
+	- 通过req.cookies可以取到传过来的cookie，并把它们转成对象。
+- multer 
+	- node.js 中间件
+	- 用于处理 enctype="multipart/form-data"（设置表单的MIME编码）的表单数据。
 
 在 Windows 命令提示符上，使用以下命令：
 
@@ -55,6 +64,9 @@ npm install express --save
 - [Node.js EventEmitter](./doc/nodejs-event.md)
 - [Node.js 函数](./doc/nodejs-function.md)
 - [Node.js 路由](./doc/nodejs-router.md)
+- [Node.js 工具模块](./doc/nodejs-utitlity-module.md)
+- [Node.js GET/POST请求](./doc/nodejs-get-post.md)
+- [Node.js Express 框架](./doc/nodejs-express-framework.md)
 
 ## 常见问题及解答
 

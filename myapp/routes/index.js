@@ -1,6 +1,9 @@
 var express = require('express');
-var fs = require('fs');
 var router = express.Router();
+// var fs = require('fs');
+// var http = require('http');
+// var querystring = require('querystring');
+
 
 // 阻塞代码实例
 // var data = fs.readFileSync('./public/static/input.txt');
