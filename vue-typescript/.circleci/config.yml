@@ -1,0 +1,33 @@
+
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12
+
+    working_directory: ~/vue-typescript
+
+    steps:
+      - checkout
+
+      # Download dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # Fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+
+      - run: yarn lint
+
+      - run: yarn test:unit
+
+      - run: yarn build
+
+      # Cache dependencies
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
