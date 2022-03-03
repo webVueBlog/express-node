@@ -9,6 +9,16 @@ var util = require('util');
 var fs = require("fs");
 var multer  = require('multer');
 
+//添加的新用户数据
+var user = {
+   "user4" : {
+      "name" : "mohit",
+      "password" : "password4",
+      "profession" : "teacher",
+      "id": 4
+   }
+}
+
 var app = express();
 
 // 创建 application/x-www-form-urlencoded 编码解析
@@ -59,6 +69,80 @@ app.get('/', function (req, res) {
    // http://localhost:3000/static/index.html
    // res.sendFile( __dirname + "/" + "index.html" );
    res.sendFile( __dirname + "/" + "public/static/index.html" );
+})
+
+var id = 2;
+// app.get('/deleteUser', function (req, res) {
+//    fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
+//        data = JSON.parse( data );
+//        delete data["user" + id];
+       
+//        console.log( data );
+//        res.end( JSON.stringify(data));
+//    });
+// })
+
+app.get('/deleteUser', function (req, res) {
+   // 读取已存在的数据
+   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       delete data["user" + id];
+       console.log( data );
+	   var des_file = __dirname + "/" + "json/users.json"
+	   fs.writeFile(des_file, JSON.stringify(data), function (err) {
+	     if( err ){
+	          console.log( err );
+	     }else{
+	          res.end( JSON.stringify(data));
+	      }
+	   });
+	   
+   });
+})
+
+app.get('/listUsers/:id', function (req, res) {
+   // 首先我们读取已存在的用户
+   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       var user = data["user" + req.params.id] 
+       console.log( user );
+       res.end( JSON.stringify(user));
+   });
+})
+
+app.get('/addUser', function (req, res) {
+   // 读取已存在的数据
+   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       data["user4"] = user["user4"];
+       console.log( data );
+	   var des_file = __dirname + "/" + "json/users.json"
+	   fs.writeFile(des_file, JSON.stringify(data), function (err) {
+	     if( err ){
+	          console.log( err );
+	     }else{
+	          res.end( JSON.stringify(data));
+	      }
+	   });
+	   
+   });
+})
+
+// app.get('/addUser', function (req, res) {
+//    // 读取已存在的数据
+//    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
+//        data = JSON.parse( data );
+//        data["user4"] = user["user4"];
+//        console.log( data );
+//        res.end( JSON.stringify(data));
+//    });
+// })
+
+app.get('/listUsers', function (req, res) {
+   fs.readFile( __dirname + "/" + "json/users.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+   });
 })
 
 app.post('/file_upload', function (req, res) {

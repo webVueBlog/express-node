@@ -67,6 +67,7 @@ express-node
 - [Node.js 工具模块](./doc/nodejs-utitlity-module.md)
 - [Node.js GET/POST请求](./doc/nodejs-get-post.md)
 - [Node.js Express 框架](./doc/nodejs-express-framework.md)
+- [Node.js RESTful API](./doc/nodejs-restful-api.md)
 
 ## 常见问题及解答
 
