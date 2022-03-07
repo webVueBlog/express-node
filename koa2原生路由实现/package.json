@@ -1,0 +1,14 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "koa2原生路由实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "webVueBlog",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4"
+  }
+}
