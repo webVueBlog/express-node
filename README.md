@@ -111,6 +111,8 @@ express-node
 - [koa2加载模板引擎](./koa/koa2加载模板引擎.md)
 	- 示例目录下 koa2加载模板引擎 文件
 	- [ejs模板引擎官方文档](https://github.com/mde/ejs)
+- [busboy模块](./koa/busboy模块.md)
+- [上传文件简单实现](./koa/上传文件简单实现.md)
 
 ## 阶段五
 
