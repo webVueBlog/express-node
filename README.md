@@ -108,7 +108,9 @@ express-node
 	- 示例目录下 koa2使用cookie 文件
 - [koa2实现session](./koa/koa2实现session.md)
 	- 示例目录下 koa2实现session 文件
-
+- [koa2加载模板引擎](./koa/koa2加载模板引擎.md)
+	- 示例目录下 koa2加载模板引擎 文件
+	- [ejs模板引擎官方文档](https://github.com/mde/ejs)
 
 ## 阶段五
 

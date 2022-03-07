@@ -1,0 +1,16 @@
+{
+  "name": "koa2-session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "webVueBlog",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-mysql-session": "^0.0.2",
+    "koa-session-minimal": "^4.0.2"
+  }
+}
