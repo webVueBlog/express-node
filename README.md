@@ -93,7 +93,9 @@ express-node
 - [koa2原生路由实现](./koa/koa2原生路由实现.md)
 	- 示例目录下 koa2原生路由实现 文件
 - [koa-router中间件](./koa/koa-router中间件.md)
-
+	- 示例目录下 koa-router中间件 文件
+- [GET请求数据获取](./koa/GET请求数据获取.md)
+	- 示例目录下 koa-GET请求数据获取 文件
 
 ## 阶段五
 
