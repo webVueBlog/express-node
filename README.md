@@ -102,6 +102,9 @@ express-node
 	- 示例目录下 koa-bodyparser中间件 文件
 - [原生koa2实现静态资源服务器](./koa/原生koa2实现静态资源服务器.md)
 	- 示例目录下 原生koa2实现静态资源服务器 文件
+- [koa-static中间件使用](./koa/koa-static中间件使用.md)
+	- 示例目录下 koa-static中间件使用 文件
+
 
 ## 阶段五
 
