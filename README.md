@@ -1,16 +1,14 @@
 # express-node 
 
-express-node 
+- 高度包容、快速而极简的Node.js Web框架
+- [Node.js v9.11.2 Documentation](https://nodejs.org/dist/latest-v9.x/docs/api/esm.html)
+- [Express](https://expressjs.com/)
 
-1. "express": "~4.16.1",
-2. node
-3. "cookie-parser": "~1.4.4",
-4. "body-parser": "^1.18.3",
-5. "multer": "^1.4.4",
-
-## [Express](https://expressjs.com/)
-
-高度包容、快速而极简的Node.js Web框架
+0. "express": "~4.16.1",
+1. node
+2. "cookie-parser": "~1.4.4",
+3. "body-parser": "^1.18.3",
+4. "multer": "^1.4.4",
 
 - body-parser 
 	- node.js 中间件
@@ -31,6 +29,7 @@ express-node
 - 使用vscode 下载REST Client
 - [加密，解密](https://github.com/travist/jsencrypt)
 - 插件nodemon - npm install nodemon
+- [文件断点续传](./otherDoc/file.md)
 
 ```js
 "start": "node ./bin/www" -> "start": "nodemon ./bin/www"
@@ -126,6 +125,10 @@ express-node
 - [分层设计](./koa/分层设计.md)
 - [数据库设计](./koa/数据库设计.md)
 - [路由设计](./koa/路由设计.md)
+- [webpack4 环境搭建](./koa/webpack4环境搭建.md)
+- [使用react.js](./koa/使用react.md)
+- [session登录态判断处理](./koa/session登录态判断处理.md)
+- [import/export使用](./koa/import-export使用.md)
 
 ## 阶段五
 
