@@ -113,6 +113,8 @@ express-node
 	- [ejs模板引擎官方文档](https://github.com/mde/ejs)
 - [busboy模块](./koa/busboy模块.md)
 - [上传文件简单实现](./koa/上传文件简单实现.md)
+- [异步上传图片实现](./koa/异步上传图片实现.md)
+- [mysql模块](./koa/mysql模块.md)
 
 ## 阶段五
 

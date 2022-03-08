@@ -1,7 +1,8 @@
 const inspect = require('util').inspect
 const path = require('path')
+const os = require('os')
 const fs = require('fs')
-let Busboy = require('busboy')
+const Busboy = require('busboy')
 
 /**
  * 同步创建文件目录
@@ -44,12 +45,13 @@ function uploadFile( ctx, options) {
   let fileType = options.fileType || 'common'
   let filePath = path.join( options.path,  fileType)
   let mkdirResult = mkdirsSync( filePath )
-  
+
   return new Promise((resolve, reject) => {
     console.log('文件上传中...')
     let result = { 
       success: false,
-      formData: {},
+      message: '',
+      data: null
     }
 
     // 解析请求文件事件
@@ -65,15 +67,13 @@ function uploadFile( ctx, options) {
       file.on('end', function() {
         result.success = true
         result.message = '文件上传成功'
+        result.data = {
+          pictureUrl: `//${ctx.host}/image/${fileType}/${fileName}`
+        }
         console.log('文件上传成功！')
+        resolve(result)
       })
     })
-
-    // 解析表单中其他字段信息
-    busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated, encoding, mimetype) {
-      console.log('表单字段数据 [' + fieldname + ']: value: ' + inspect(val));
-      result.formData[fieldname] = inspect(val);
-    });
 
     // 解析结束事件
     busboy.on('finish', function( ) {
@@ -89,9 +89,8 @@ function uploadFile( ctx, options) {
 
     req.pipe(busboy)
   })
-    
-} 
 
+} 
 
 module.exports =  {
   uploadFile

@@ -7,7 +7,7 @@ const app = new Koa()
 // 配置存储session信息的mysql
 let store = new MysqlSession({
   user: 'root',
-  password: 'huangguangda',
+  password: 'xxxxxx',
   database: 'koa_demo',
   host: '127.0.0.1',
 })
