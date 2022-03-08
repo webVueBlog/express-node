@@ -116,6 +116,10 @@ express-node
 - [异步上传图片实现](./koa/异步上传图片实现.md)
 - [mysql模块](./koa/mysql模块.md)
 - [async-await封装使用mysql](./koa/async-await封装使用mysql.md)
+- [建表初始化](./koa/建表初始化.md)
+- [原生koa2实现jsonp](./koa/原生koa2实现jsonp.md)
+- [koa-jsonp中间件](./koa/koa-jsonp中间件.md)
+
 
 ## 阶段五
 
