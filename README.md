@@ -133,6 +133,67 @@
 
 ## 阶段五
 
+包含的示例
+
+- 404 - 404 处理
+```js
+yarn run v1.22.11
+$ ./node_modules/.bin/mocha --harmony
+  404
+    when GET /
+      √ should return the 404 page
+  1 passing (39ms)
+Done in 1.21s.
+```
+- body-parsing - 请求正文解析
+```js
+yarn run v1.22.11
+$ ./node_modules/.bin/mocha --harmony
+  Body Parsing
+    POST /uppercase
+      with JSON
+        √ should work (46ms)
+      with urlencoded
+        √ should work
+      when length > limit
+        √ should 413
+      when no name is sent
+        √ should 400
+  4 passing (80ms)
+Done in 1.31s.
+```
+- compose - 撰写中间件示例
+```js
+yarn run v1.22.11
+$ ./node_modules/.bin/mocha --harmony
+  Compose
+    when GET /
+GET / - 4
+      √ should say "Hello World" (43ms)
+GET / - 0
+      √ should set X-Response-Time
+    when not GET /
+GET /aklsjdf - 0
+      √ should 404
+  3 passing (82ms)
+Done in 2.90s.
+```
+- 条件中间件- 显示如何有条件地应用中间件
+- cookies - cookie 使用示例
+- csrf - 中间件 csrf 示例
+- 错误- 错误处理和传播
+- flash-messages - flash 示例
+- hello-world - 你好世界应用程序
+- multipart - 使用 co-busboy 下载文件的多部分示例
+- 协商- 协商使用示例
+- stream-file - 简单的文件流
+- 流对象- 对象流
+- stream-server-side-events - 服务器端事件流
+- 流视图- 查看流
+- 模板- 简单的视图渲染
+- 上传- 多文件上传
+- vhost - 虚拟主机示例
+
 ## 常见问题及解答
 
 ## Q1:如何呈现纯 HTML？
