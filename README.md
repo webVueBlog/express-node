@@ -115,6 +115,7 @@ express-node
 - [上传文件简单实现](./koa/上传文件简单实现.md)
 - [异步上传图片实现](./koa/异步上传图片实现.md)
 - [mysql模块](./koa/mysql模块.md)
+- [async-await封装使用mysql](./koa/async-await封装使用mysql.md)
 
 ## 阶段五
 
