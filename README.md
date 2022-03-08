@@ -120,7 +120,7 @@ express-node
 - [原生koa2实现jsonp](./koa/原生koa2实现jsonp.md)
 - [koa-jsonp中间件](./koa/koa-jsonp中间件.md)
 - [单元测试](./koa/单元测试.md)
-
+- [开发debug](./koa/开发debug.md)
 
 ## 阶段五
 
