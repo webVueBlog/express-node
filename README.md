@@ -76,14 +76,6 @@
 
 ## 阶段三
 
-- [MySQL的基础知识](./MySQL/MySQL的基础知识.md)
-- [MySQL的那些特性](./MySQL/MySQL的那些特性.md)
-- [MySQL的数据类型](./MySQL/MySQL的数据类型.md)
-- [MySQL如何编写和使用存储在服务器端的SQL对象](./MySQL/MySQL如何编写和使用存储在服务器端的SQL对象.md)
-- [如何查询运行得更快](./MySQL/如何查询运行得更快.md)
-
-## 阶段四
-
 - [KOA基于Node.js平台的下一代web开发框架](./koa/开发文档.md)
 - [koa2 快速开始](./koa/koa2快速开始.md)
 	- 示例目录下 koa2helloworld 文件
@@ -131,7 +123,7 @@
 - [session登录态判断处理](./koa/session登录态判断处理.md)
 - [import/export使用](./koa/import-export使用.md)
 
-## 阶段五
+## 阶段四
 
 包含的示例
 
