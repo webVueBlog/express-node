@@ -155,6 +155,8 @@
 - [搭建 HTTP 服务器](./NodeDoc/搭建HTTP服务器.md)
 - [使用 Node.js 发送 HTTP 请求](./NodeDoc/使用Node发送HTTP请求.md)
 - [在 Node.js 中使用文件描述符](./NodeDoc/在Node中使用文件描述符.md)
+- [Node.js 文件属性](./NodeDoc/Node文件属性.md)
+- [Node.js 文件路径](./NodeDoc/Node文件路径.md)
 
 
 
