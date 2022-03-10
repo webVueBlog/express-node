@@ -145,6 +145,10 @@
 - [package-lock.json 文件](./NodeDoc/package-lock文件.md)
 - [使用 npm 的语义版本控制](./NodeDoc/使用npm的语义版本控制.md)
 - [Node.js 事件循环](./NodeDoc/Node事件循环.md)
+- [了解 process.nextTick()](./NodeDoc/nextTick.md)
+- [了解 setImmediate()](./NodeDoc/setImmediate.md)
+
+
 
 
 
