@@ -157,6 +157,7 @@
 - [在 Node.js 中使用文件描述符](./NodeDoc/在Node中使用文件描述符.md)
 - [Node.js 文件属性](./NodeDoc/Node文件属性.md)
 - [Node.js 文件路径](./NodeDoc/Node文件路径.md)
+- [使用 Node.js 读取文件](./NodeDoc/readFile.md)
 
 
 
