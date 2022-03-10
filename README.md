@@ -4,6 +4,8 @@
 - [Node.js v9.11.2 Documentation](https://nodejs.org/dist/latest-v9.x/docs/api/esm.html)
 - [Express](https://expressjs.com/)
 - 所有过程已测试成功，放心使用哦！
+- [the-nodejs-os-module](http://nodejs.cn/learn/the-nodejs-os-module)
+- [nodejs-streams](http://nodejs.cn/learn/nodejs-streams)
 
 0. "express": "~4.16.1",
 1. node
@@ -162,7 +164,8 @@
 - [在 Node.js 中使用文件夹](./NodeDoc/使用文件夹.md)
 - [Node.js 文件系统模块](./NodeDoc/文件系统模块.md)
 - [Node.js 路径模块](./NodeDoc/路径模块.md)
-
+- [Node.js 事件模块](./NodeDoc/事件模块.md)
+- [Node.js 流](./NodeDoc/流.md)
 
 ## 常见问题及解答
 
