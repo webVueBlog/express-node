@@ -150,6 +150,12 @@
 - [JavaScript 定时器](./NodeDoc/定时器.md)
 - [JavaScript 异步编程与回调](./NodeDoc/异步编程与回调.md)
 - [了解 JavaScript Promise](./NodeDoc/Promise.md)
+- [具有 Async 和 Await 的现代异步 JavaScript](./NodeDoc/async-await.md)
+- [Node.js 事件触发器](./NodeDoc/事件触发器.md)
+- [搭建 HTTP 服务器](./NodeDoc/搭建HTTP服务器.md)
+- [使用 Node.js 发送 HTTP 请求](./NodeDoc/使用Node发送HTTP请求.md)
+- [在 Node.js 中使用文件描述符](./NodeDoc/在Node中使用文件描述符.md)
+
 
 
 ## 常见问题及解答
