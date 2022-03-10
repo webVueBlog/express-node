@@ -147,9 +147,9 @@
 - [Node.js 事件循环](./NodeDoc/Node事件循环.md)
 - [了解 process.nextTick()](./NodeDoc/nextTick.md)
 - [了解 setImmediate()](./NodeDoc/setImmediate.md)
-
-
-
+- [JavaScript 定时器](./NodeDoc/定时器.md)
+- [JavaScript 异步编程与回调](./NodeDoc/异步编程与回调.md)
+- [了解 JavaScript Promise](./NodeDoc/Promise.md)
 
 
 ## 常见问题及解答
