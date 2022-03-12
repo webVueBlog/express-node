@@ -193,6 +193,7 @@
 - [NULL值处理](./Mysql/NULL值处理.md)
 - [正则表达式](./Mysql/正则表达式.md)
 - [事务](./Mysql/事务.md)
+- [ALTER](./Mysql/ALTER.md)
 
 ## 常见问题及解答
 
