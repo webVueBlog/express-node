@@ -182,6 +182,10 @@
 - [where](./Mysql/where.md)
 - [UPDATE](./Mysql/UPDATE.md)
 - [DELETE](./Mysql/DELETE.md)
+- [LIKE](./Mysql/LIKE.md)
+- [UNION](./Mysql/UNION.md)
+
+
 
 ## 常见问题及解答
 
