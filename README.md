@@ -184,7 +184,8 @@
 - [DELETE](./Mysql/DELETE.md)
 - [LIKE](./Mysql/LIKE.md)
 - [UNION](./Mysql/UNION.md)
-
+- [排序](./Mysql/排序.md)
+- [GROUP BY](./Mysql/分组.md)
 
 
 ## 常见问题及解答
