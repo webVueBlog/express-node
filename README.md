@@ -6,6 +6,7 @@
 - 所有过程已测试成功，放心使用哦！
 - [the-nodejs-os-module](http://nodejs.cn/learn/the-nodejs-os-module)
 - [nodejs-streams](http://nodejs.cn/learn/nodejs-streams)
+- [Mac电脑使用终端快速进入mysql命令行的方法](./doc/mac.md)
 
 0. "express": "~4.16.1",
 1. node
