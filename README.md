@@ -7,6 +7,7 @@
 - [the-nodejs-os-module](http://nodejs.cn/learn/the-nodejs-os-module)
 - [nodejs-streams](http://nodejs.cn/learn/nodejs-streams)
 - [Mac电脑使用终端快速进入mysql命令行的方法](./doc/mac.md)
+- [yarn安装](./doc/yarn安装.md)
 
 0. "express": "~4.16.1",
 1. node
@@ -195,6 +196,17 @@
 - [正则表达式](./Mysql/正则表达式.md)
 - [事务](./Mysql/事务.md)
 - [ALTER](./Mysql/ALTER.md)
+- [索引](./Mysql/索引.md)
+- [临时表](./Mysql/临时表.md)
+- [复制表](./Mysql/复制表.md)
+- [元数据](./Mysql/元数据.md)
+- [序列使用](./Mysql/序列使用.md)
+- [处理重复数据](./Mysql/处理重复数据.md)
+- [sql注入](./Mysql/注入.md)
+- [导出数据](./Mysql/导出数据.md)
+- [导入数据](./Mysql/导入数据.md)
+- [函数](./Mysql/函数.md)
+- [运算符](./Mysql/运算符.md)
 
 ## 常见问题及解答
 
