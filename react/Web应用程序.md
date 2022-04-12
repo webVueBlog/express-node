@@ -291,7 +291,7 @@ class Product extends React.Component {
 }
 ```
 
-使用 transform-class-properties插件，我们可以将handleUpVote写为剪头函数。这会确保函数内部的this能绑定到当前组件。
+使用 transform-class-properties插件，我们可以将handleUpVote写为箭头函数。这会确保函数内部的this能绑定到当前组件。
 
 ```js
 class Product extends React.Component {
