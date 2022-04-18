@@ -256,6 +256,8 @@
 - [react-ref](./react/react-ref.md)
 - [forward-ref](./react/forward-ref.md)
 - [context](./react/context.md)
+- [concurrent-mode](./react/concurrent-mode.md)
+
 
 ## 常见问题及解答
 
