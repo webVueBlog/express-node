@@ -259,6 +259,7 @@
 - [concurrent-mode](./react/concurrent-mode.md)
 - [Hooks](./react/Hooks.md)
 - [Others](./react/Others.md)
+- [react-fiber-root](./react/react-fiber-root.md)
 
 
 ## 常见问题及解答
