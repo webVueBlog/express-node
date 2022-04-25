@@ -235,6 +235,7 @@
 - [基础数据库术语](./Mysql/基础数据库术语.md)
 - [mysql教程](./Mysql/mysql.md)
 - [HTTP](./企业级/HTTP.md)
+- [WebSocket](./企业级/WebSocket.md)
 
 ## React技术全家桶
 
