@@ -263,7 +263,9 @@
 - [Others](./react/Others.md)
 - [react-fiber-root](./react/react-fiber-root.md)
 - [JSX](./react/JSX.md)
-
+- [函数式组件](./react/函数式组件.md)
+- [类式组件](./react/类式组件.md)
+- [对state的理解](./react/对state的理解.md)
 
 
 ## 常见问题及解答
