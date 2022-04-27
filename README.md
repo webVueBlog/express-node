@@ -267,6 +267,7 @@
 - [函数式组件](./react/函数式组件.md)
 - [类式组件](./react/类式组件.md)
 - [对state的理解](./react/对state的理解.md)
+- [字符串形式的ref](./react/字符串形式的ref.md)
 
 
 ## 常见问题及解答
