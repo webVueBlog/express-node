@@ -251,7 +251,7 @@
 - [React 组件生命周期](./react/组件生命周期.md)
 - [React Refs](./react/Refs.md)
 
-### 阶段二(源码)
+### 阶段二
 
 - [JSX到JavaScript的转换](./react/JSX到JavaScript的转换.md)
 - [ReactElement](./react/ReactElement.md)
@@ -268,7 +268,7 @@
 - [类式组件](./react/类式组件.md)
 - [对state的理解](./react/对state的理解.md)
 - [字符串形式的ref](./react/字符串形式的ref.md)
-
+- [Update和UpdateQueue](./react/Update和UpdateQueue.md)
 
 ## 常见问题及解答
 
