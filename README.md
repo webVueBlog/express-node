@@ -270,6 +270,7 @@
 - [字符串形式的ref](./react/字符串形式的ref.md)
 - [Update和UpdateQueue](./react/Update和UpdateQueue.md)
 - [react脚手架](./react/react脚手架.md)
+- [消息订阅与发布](./react/消息订阅与发布.md)
 
 ## 常见问题及解答
 
